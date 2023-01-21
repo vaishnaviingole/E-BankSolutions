@@ -1,0 +1,203 @@
+ 1.1Purpose :
+The purpose of this SRS (Software Requirements Specification) document is to provide a detailed description of our software project, specifications, and goals. This document describes the features included that are included in our project, its user interface, and its functionality. The document describes how we see  and understands the requirements of the software. 
+ 1.2 Definitions:
+Bank  : A place where the customers deposit money for safe keeping.
+ Bank Employee : The employees of the bank who perform the banking operations.
+Data-flow: A diagram that shows the flow of data between processing elements
+GUI :GUI is an acronym for ‘Graphical User Interface” 
+ Bank Customer : The people who have an account in the bank. 
+EBS : eBanking Solution 
+State-Transition A diagram that shows the flow of the program from one status to another 
+User : The person who will be using the Product ( EBS)
+1.3 References for Requirement Analysis and Design:
+1.  https://docs.oracle.com
+2.      www.mysql.com
+3.www.wikipedia.org
+
+
+
+
+1.4 Overview
+The application is to be fully-functional bank software. It will consist of a few different modules.
+The first module is to be a software application that can be used by bank customers as in an ATM.
+This application will allow the user to deposit funds, withdraw funds, check balance, and transfer
+funds.
+The second module is to be a software application that is used within the bank by the bank tellers
+and managers. This application will allow everything the ATM allows as well as some additional
+features. These features include: account creation, account deletion, loan approval, customer
+records, and reports.
+Both pieces of software will be linked to a central bank server. This server will handle multiple
+threads and will therefore allow for simultaneous access of multiple users. It will provide for user
+authentication and will store all data.
+
+
+2.1 List Of Functions:
+1. Online balance check and transaction information
+2. Save or view past history of transaction
+3. Balance transfer
+4. Online record Entry
+5. Online record search
+6. Online Billing Option
+
+
+
+
+2.2 Functional Description:
+This software will have following functionalities
+1. Online balance check and transaction information:
+Customer will be able to check his balance
+online while sitting at home by accessing the database of the bank
+using his/her password and account no. allotted him by the bank.
+2. Save or view past history of transaction:
+It will be easy for the customer to view or save
+his history transactions. It will provide
+ 
+him the opportunity to maintain his bank balance and needs.
+3. Balance transfer:
+This system will provide a path to the customer
+of the bank to transfer his balance to other account in easy steps. A
+small transfer fee will be applicable for this transaction.
+4. Online record Entry:
+Bank staff will input and maintain their record
+online. It will be easy and efficient for them to serve more and more
+people in less time.
+5. Online record search:
+ 
+Bank staff will easily search a record and update it if
+needed. Transactions will be faster even physically from the branch
+because it will be very easy for the bank staff to check the balance
+of a specific person and update its record if necessary.
+ 
+6. Online Billing Option:
+Customers will be able to shop online and pay
+the bills from their account. A secure way will be provided for the
+billing. Online shopping will provide them the easiest way to buy
+and sell their items.
+
+
+
+
+
+
+3.1 Functional Requirements:
+Following are the services which this system will provide. These are the facilities and functions required by the customer.a) Online balance check.b) Online shopping opportunity.c) Online data entry by the staff.d) Updating the data.e) Balance transfer.
+ 
+Process Specification:
+All the process mentioned in the DFD are described as below
+Customer Login:
+Each Customer will have its account Id and password. This page will require both of these attributes for them to access their account.
+Bank Features:
+It isn’t sure that each visitor of the Bank’s website
+will be a customer. He/she would be a normal visitor interested in reading the features the bank provides. The
+website’s main page should
+provide him the basic features and benefits of the bank to these types of users.
+Order for an Account:
+A new visitor the
+Bank’s website would be
+interested in opening a new account in the Bank. So he must be provided an easy path to create a new account in the bank.
+Fill the Form:
+New comers should have to fill the form to register him/herself with the bank. After filling the form, If the values inputted by the user were logical correct, his contact details will besent to the administration block else he will be asked to input the values again.
+Welcome Page:
+After a user will login, he will provide an interface offering different tasks (Here this interface will provide many of the functionalities, which the customer needs in the software). He has to choose a task to carry on his work.
+Staff Login:
+On the Website main page, A staff login link will also be provided. Bank staff
+will use to input their ID’s and
+passwords to access their account. Here the type of staff will also be recognized, if he will be of administration block, he will be sent
+ 
+to the administration module else he will be sent to the records management module.
+Check the balance:
+After logging in, if the user wants to check his balance he will have to click the balance check link. It will tell him his current balance of the account through which he is logged in.
+Transfer Balance:
+If user wants to transfer his money to some other account, then this module will provide him this opportunity. He will put the account details of the receiver. After this process, server will check the balance of the user and if the transfer balance will be less than the account balance then transfer will take place else he will be alarmed that he has lo balance.
+Account detail teller:
+If the user physically contacts the Bank branch then he will provide his account detail to the management staff who will inform him about his account. User will be able to do every task at the branch that he can do online from his home.
+Order Cash Book:
+If user’s Cheque book has been finished, he will be
+able to order a new cheque book from this module.
+3.2) External Interface Requirements:
+These requirements are discussed under the following categorization.
+3.2.1. User interface:
+Application will be accessed through a BrowserInterface. The interface would be viewed best using 1024 x 768 and 800 x 600 pixels resolution setting. The software would be fully compatible with Microsoft Internet Explorer for version 6 and above.
+ 
+No user would be able to access any part of the application without logging on to the system.
+3.2.2. Hardware Interface:
+3.2.2.1. Server Side:
+a)
+ 
+Operating System: Windows 9x/xp ,Windows ME.b)
+ 
+Processor: Pentium 3.0 GHz or higher.c)
+ 
+RAM: 256 Mb or more.d)
+ 
+Hard Drive: 10 GB or more.
+3.2.2.2. Client side:
+a)Operating System: Windows 9x or above, MAC or UNIX
+.b)Processor: Pentium III or 2.0 GHz or higher.c)
+ 
+RAM: 256 Mb or more.
+3.2.3. Software Interface:
+3.2.3.1 Client Side:
+HTML, Web Browser, Flash Player, MS Office,Windows XP/9x/ME.
+3.2.3.2. Web Server:
+HTML, MS Office, Windows XP/9x/ME.
+3.2.4. Communication Interface:
+The Customer must connect to the Internet to accesstheWebsite:
+a)Dialup Modem of 52 kbps.
+b)Broadband Internet
+.c)Dialup or Broadband Connection with a Internet Provider.
+
+
+
+4  Functional Requirements:
+4.1. Usability 
+The users of the system are members and the administrators who maintain the system. The members are 
+assumed to have basic knowledge of the computers and Internet browsing. The administrators of the 
+system to have more knowledge of the internals of the system and is able to rectify the small problems 
+that may arise due to disk crashes, power failures and other catastrophes to maintain the system. The 
+proper user interface, user’s manual, online help and the guide to use and maintain the system must be 
+sufficient to educate the users on how to use the system without any problems. 
+4.2 Reliability 
+The system is safety critical. If it moves out of normal operation mode, the requirement to drop to 
+the next lower floor and open its doors is given priority. This emergency behavior shall not occur 
+without reason. The system has to be very reliable due to the importance of data and the damages 
+incorrect or incomplete data can do. 
+4.3 Availability 
+When in normal operating conditions, request by a user for an servicer shall be handled within 1 
+second. Immediate feedback of the systems activities shall be communicated to the user by link 
+page clicked. 
+At peek system load, individual users at either the server in the security office, at the links or 
+inside the banking system shall not experience any delay in the service response to their 
+commands longer than 1 second. : The system is available 100% for the user and is used 24 hrs. A day 
+and 365 days a year. The system shall be operational 24 hours a day and 7 days a week. 
+4.4 Security 
+There shall be no security mechanisms in place to keep unwanted users out of the system. 
+However, all users of the system shall not be able to perform actions or request actions from the 
+Banking system, which will cause harm to any person or damage to the system or its 
+environment. 
+4.5 Maintainability 
+There shall be design documents describing the internal works of the software.  There shall be 
+an access on the control panel and servers for the purpose of upgrading the software or flashing 
+any firmware. 
+4.6 Portability 
+There are no portability requirements. 
+Requirement Organization: All requirements shall be organized according to object. First general 
+requirements for all service types shall be described. Following are sections for each service type 
+and their special requirements. Last are requirements related to other objects like the users view 
+pages and any other. 
+4.7 Standard Compliance 
+The Banking systems hardware and software shall be built according to the 2008 standard for
+Online Banking systems issued by the government of the United States of America.
+
+4.8 Mean Time between Failures (MTBF) 
+The system will be developed in such a way that it may fail once in a year. 
+4.9 Mean Time to Repair (MTTR) 
+Even if the system fails, the system will be recovered back up within an hour or less. 
+4.10 Accuracy 
+The accuracy of the system is limited by the accuracy of the speed at which the employees and users use 
+the system. 
+4.11 Maximum Bugs or Defect Rate 
+Not specified. 
+4.12 Access Reliability 
+The system shall provide 100% access reliability.
+
